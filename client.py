@@ -60,8 +60,3 @@ class Client:
             raise ClientError()
         self.answer()
         
-    def close(self):
-        try:
-            self.conn.close()
-        except socket.error:
-            raise ClientError()
